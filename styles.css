@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+    background-color: var(--Pale-blue);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.container {
+    margin: 4rem 1.5rem;
+    border-radius: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.product__image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.product__summary {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.product__summary h1 {
+    font-size: 22px;
+    padding-bottom: 1.5rem;
+    line-height: 10px;   
+}
+
+.product__summary p {
+    color: var(--Desaturated-blue);
+}
+
+.product__plan {
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.product__plan p {
+    font-weight: 700;
+}
+
+.product__plan span {
+    font-weight: 400;
+    color: var(--Desaturated-blue);
+}
+
+.product__plan a {
+    font-weight: bold;
+}
+
+.product__payment {
+    background-color: var(--Bright-blue);
+    border-radius: 0.5rem;
+    box-shadow: 5px 15px var(--Very-pale-blue);
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.product__payment:hover {
+    cursor: pointer;
+}
+
+.product__cancel {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--Desaturated-blue);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.product__cancel:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 300px;
+        margin: auto;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 300px;
+        margin: auto;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 300px;
+        margin: auto;
+        margin-top: 6rem;
+    }
+}
+
+@media (max-width: 2560px) {
+    .container {
+        max-width: 300px;
+        margin: auto;
+        margin-top: 6rem;
+    }
+}
+
+
+
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
